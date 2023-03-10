@@ -1,0 +1,329 @@
+{
+    "nodes": [
+        {
+            "name": "driver.0",
+            "runtime": 0.0,
+            "time_highlighted": true,
+            "operatorsList": [
+                "AdaptiveSparkPlan"
+            ]
+        },
+        {
+            "name": "driver.1",
+            "runtime": 0.003,
+            "time_highlighted": true,
+            "operatorsList": [
+                "Sort"
+            ]
+        },
+        {
+            "name": "driver.3",
+            "runtime": 0.0,
+            "time_highlighted": true,
+            "operatorsList": [
+                "AQEShuffleRead"
+            ]
+        },
+        {
+            "name": "driver.4",
+            "runtime": 0.005,
+            "time_highlighted": true,
+            "operatorsList": [
+                "Exchange"
+            ]
+        },
+        {
+            "name": "36.0",
+            "runtime": 0.011,
+            "time_highlighted": true,
+            "operatorsList": [
+                "HashAggregate"
+            ]
+        },
+        {
+            "name": "driver.7",
+            "runtime": 0.0,
+            "time_highlighted": true,
+            "operatorsList": [
+                "AQEShuffleRead"
+            ]
+        },
+        {
+            "name": "20.0",
+            "runtime": 0.015,
+            "time_highlighted": true,
+            "operatorsList": [
+                "ShuffledHashJoin",
+                "Project",
+                "BroadcastHashJoin",
+                "Project",
+                "BroadcastHashJoin",
+                "Project",
+                "HashAggregate",
+                "Exchange"
+            ]
+        },
+        {
+            "name": "driver.17",
+            "runtime": 0.0,
+            "time_highlighted": true,
+            "operatorsList": [
+                "AQEShuffleRead"
+            ]
+        },
+        {
+            "name": "13.0",
+            "runtime": 50.509,
+            "time_highlighted": true,
+            "operatorsList": [
+                "ShuffledHashJoin",
+                "Project",
+                "Exchange"
+            ]
+        },
+        {
+            "name": "8.0",
+            "runtime": 4.359,
+            "time_highlighted": false,
+            "operatorsList": [
+                "Sort",
+                "Sort",
+                "SortMergeJoin",
+                "Project",
+                "Exchange"
+            ]
+        },
+        {
+            "name": "driver.28",
+            "runtime": 0.0,
+            "time_highlighted": false,
+            "operatorsList": [
+                "AQEShuffleRead"
+            ]
+        },
+        {
+            "name": "0.0",
+            "runtime": 3.9139999999999997,
+            "time_highlighted": false,
+            "operatorsList": [
+                "Scan parquet tpch_parq_1tb_decimal_gz.customer",
+                "ColumnarToRow",
+                "Filter",
+                "Exchange"
+            ]
+        },
+        {
+            "name": "driver.36",
+            "runtime": 0.0,
+            "time_highlighted": false,
+            "operatorsList": [
+                "AQEShuffleRead"
+            ]
+        },
+        {
+            "name": "3.0",
+            "runtime": 9.3,
+            "time_highlighted": false,
+            "operatorsList": [
+                "Scan parquet tpch_parq_1tb_decimal_gz.orders",
+                "ColumnarToRow",
+                "Filter",
+                "Project",
+                "Exchange"
+            ]
+        },
+        {
+            "name": "4.0",
+            "runtime": 264.101,
+            "time_highlighted": true,
+            "operatorsList": [
+                "Scan parquet tpch_parq_1tb_decimal_gz.lineitem",
+                "ColumnarToRow",
+                "Filter",
+                "Exchange"
+            ]
+        },
+        {
+            "name": "driver.48",
+            "runtime": 0.0,
+            "time_highlighted": false,
+            "operatorsList": [
+                "AQEShuffleRead"
+            ]
+        },
+        {
+            "name": "5.0",
+            "runtime": 2.4130000000000003,
+            "time_highlighted": false,
+            "operatorsList": [
+                "Scan parquet tpch_parq_1tb_decimal_gz.supplier",
+                "ColumnarToRow",
+                "Filter",
+                "Exchange"
+            ]
+        },
+        {
+            "name": "driver.54",
+            "runtime": 10.191,
+            "time_highlighted": false,
+            "operatorsList": [
+                "BroadcastExchange"
+            ]
+        },
+        {
+            "name": "driver.55",
+            "runtime": 0.0,
+            "time_highlighted": false,
+            "operatorsList": [
+                "ColumnarToRow",
+                "Filter"
+            ]
+        },
+        {
+            "name": "driver.58",
+            "runtime": 0.156,
+            "time_highlighted": false,
+            "operatorsList": [
+                "Scan parquet tpch_parq_1tb_decimal_gz.nation"
+            ]
+        },
+        {
+            "name": "driver.59",
+            "runtime": 10.184,
+            "time_highlighted": false,
+            "operatorsList": [
+                "BroadcastExchange"
+            ]
+        },
+        {
+            "name": "driver.60",
+            "runtime": 0.0,
+            "time_highlighted": false,
+            "operatorsList": [
+                "ColumnarToRow",
+                "Filter",
+                "Project"
+            ]
+        },
+        {
+            "name": "driver.64",
+            "runtime": 0.278,
+            "time_highlighted": false,
+            "operatorsList": [
+                "Scan parquet tpch_parq_1tb_decimal_gz.region"
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "v": "driver.0",
+            "w": "driver.1",
+            "time_highlighted": true
+        },
+        {
+            "v": "driver.1",
+            "w": "driver.3",
+            "time_highlighted": true
+        },
+        {
+            "v": "driver.3",
+            "w": "driver.4",
+            "time_highlighted": true
+        },
+        {
+            "v": "driver.4",
+            "w": "36.0",
+            "time_highlighted": true
+        },
+        {
+            "v": "36.0",
+            "w": "driver.7",
+            "time_highlighted": true
+        },
+        {
+            "v": "driver.7",
+            "w": "20.0",
+            "time_highlighted": true
+        },
+        {
+            "v": "20.0",
+            "w": "driver.17",
+            "time_highlighted": true
+        },
+        {
+            "v": "driver.17",
+            "w": "13.0",
+            "time_highlighted": true
+        },
+        {
+            "v": "13.0",
+            "w": "8.0",
+            "time_highlighted": false
+        },
+        {
+            "v": "8.0",
+            "w": "driver.28",
+            "time_highlighted": false
+        },
+        {
+            "v": "driver.28",
+            "w": "0.0",
+            "time_highlighted": false
+        },
+        {
+            "v": "8.0",
+            "w": "driver.36",
+            "time_highlighted": false
+        },
+        {
+            "v": "driver.36",
+            "w": "3.0",
+            "time_highlighted": false
+        },
+        {
+            "v": "13.0",
+            "w": "4.0",
+            "time_highlighted": true
+        },
+        {
+            "v": "20.0",
+            "w": "driver.48",
+            "time_highlighted": false
+        },
+        {
+            "v": "driver.48",
+            "w": "5.0",
+            "time_highlighted": false
+        },
+        {
+            "v": "20.0",
+            "w": "driver.54",
+            "time_highlighted": false
+        },
+        {
+            "v": "driver.54",
+            "w": "driver.55",
+            "time_highlighted": false
+        },
+        {
+            "v": "driver.55",
+            "w": "driver.58",
+            "time_highlighted": false
+        },
+        {
+            "v": "20.0",
+            "w": "driver.59",
+            "time_highlighted": false
+        },
+        {
+            "v": "driver.59",
+            "w": "driver.60",
+            "time_highlighted": false
+        },
+        {
+            "v": "driver.60",
+            "w": "driver.64",
+            "time_highlighted": false
+        }
+    ]
+}
